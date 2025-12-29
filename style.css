@@ -1,0 +1,356 @@
+/* ===== PROFESSIONAL DARK THEME PORTFOLIO ===== */
+
+/* From Web 2 PDF page 1 - Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif; /* Web 2 PDF page 14 */
+    background-color: #000000; /* Web 2 PDF page 9 */
+    color: #FFFFFF; /* Web 2 PDF page 9 */
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #111111;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 3px solid #0088FF; /* Web 2 PDF page 9 */
+    margin-bottom: 40px;
+    border-radius: 10px; /* Web 3 PDF page 13 */
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 42px; /* Web 2 PDF page 16 */
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #00AAFF;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold; /* Web 2 PDF page 17 */
+}
+
+/* Navigation - From Web 2 PDF page 21 */
+nav {
+    margin: 25px 0;
+}
+
+nav a {
+    color: #00AAFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 8px 16px;
+    border-radius: 5px; /* Web 3 PDF page 13 */
+}
+
+nav a:hover {
+    color: #00FF88;
+    background-color: rgba(0, 255, 136, 0.1);
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    background-color: #111111;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 2px solid #333333; /* Web 3 PDF page 11 */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #00FF88;
+    border-bottom: 3px solid #00FF88;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    font-size: 32px; /* Web 2 PDF page 16 */
+}
+
+h3 {
+    color: #00AAFF;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* About Section - SIMPLIFIED */
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.photo-container {
+    flex: 1;
+    text-align: center;
+}
+
+/* SIMPLE PHOTO STYLING - Let HTML control size */
+.profile-photo {
+    border-radius: 10px;
+    border: 3px solid #00FF88;
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+    /* Remove width/height constraints - HTML will control */
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 2;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #222222;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    border: 1px solid #333;
+}
+
+.stat-item h3 {
+    color: #00FF88;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Projects */
+.project {
+    background-color: #222222;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #FF5500;
+    transition: all 0.3s; /* Web 3 PDF page 27 - Simple transition */
+}
+
+.project:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-5px); /* Simple hover effect */
+    box-shadow: 0 10px 20px rgba(255, 85, 0, 0.2);
+}
+
+.project-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.project-image img {
+    border-radius: 8px;
+    border: 2px solid #555;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* ==== SKILLS SECTION ==== */
+.skill-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.skill-item p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.skill-percent {
+    color: #00AAFF;
+    font-weight: bold;
+}
+
+.skill-controls {
+    margin-bottom: 30px;
+}
+
+.skill-controls button {
+    background-color: #0088FF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.skill-controls button:hover {
+    background-color: #0066CC;
+}
+
+.skill-item button {
+    background-color: #00AA55;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.skill-item button:hover {
+    background-color: #008844;
+}
+
+.year-display {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid #00FF88;
+}
+
+/* Contact Form */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Web 3 PDF page 21 */
+    margin-top: 20px;
+}
+
+td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+label {
+    color: #00FF88;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #222222;
+    color: #FFFFFF;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #0088FF;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0088FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0066CC;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #111111;
+    color: #888888;
+    margin-top: 50px;
+    border-top: 3px solid #333333;
+    border-radius: 10px;
+}
+
+/* Responsive Design - From Web 3 PDF page 36 */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+        padding: 12px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-grid {
+        flex-direction: column;
+    }
+    
+    .project {
+        padding: 20px;
+    }
+    
+    table {
+        display: block;
+    }
+    
+    td {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .skill-item p {
+        flex-direction: column;
+    }
+    
+    .skill-percent {
+        margin-top: 5px;
+    }
+}
